@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/drawer"
+    android:background="@drawable/vvbbv"
+    >
+
+
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav"
+        app:headerLayout="@layout/helpnav"
+        app:menu="@menu/itsmain"
+        android:layout_gravity = "start"/>
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="665dp">
+
+
+                    <ImageView
+                        android:id="@+id/amazon"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="#FFFFFF"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toStartOf="@+id/flipkart"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/rename" />
+
+                    <ImageView
+                        android:id="@+id/flipkart"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#037cd5"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toEndOf="@+id/amazon"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/sampl" />
+
+                    <Button
+                        android:id="@+id/bu"
+                        android:layout_width="119dp"
+                        android:layout_height="103dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aspl"
+                        android:gravity="center"
+                        android:text="Compare"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textColorLink="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="normal|bold|italic"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/snapdeal"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="#ff2341"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toStartOf="@+id/walmart"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/amazon"
+                        app:srcCompat="@drawable/addd" />
+
+                    <ImageView
+                        android:id="@+id/walmart"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#FFFFFF"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toEndOf="@+id/snapdeal"
+                        app:layout_constraintTop_toBottomOf="@+id/flipkart"
+                        app:srcCompat="@drawable/ilff" />
+
+                    <ImageView
+                        android:id="@+id/aliexpress"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="#FFFFFF"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toStartOf="@+id/ebay"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/snapdeal"
+                        app:srcCompat="@drawable/asdsdaad" />
+
+                    <ImageView
+                        android:id="@+id/ebay"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toEndOf="@+id/aliexpress"
+                        app:layout_constraintTop_toBottomOf="@+id/walmart"
+                        app:srcCompat="@drawable/ebay" />
+
+                    <ImageView
+                        android:id="@+id/paytm"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="#FFFFFF"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toStartOf="@+id/target"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/aliexpress"
+                        app:srcCompat="@drawable/paytm" />
+
+                    <ImageView
+                        android:id="@+id/target"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toEndOf="@+id/paytm"
+                        app:layout_constraintTop_toBottomOf="@+id/ebay"
+                        app:srcCompat="@drawable/csc" />
+
+                    <Switch
+                        android:id="@+id/sw"
+                        android:layout_width="120dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="PRICE"
+                        android:textColor="#0529F3"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic"
+                        android:thumb="@drawable/thumb"
+                        android:track="@drawable/track"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/paytm" />
+
+                    <TextView
+                        android:id="@+id/from"
+                        android:layout_width="84dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/frto"
+                        android:gravity="center|center_horizontal"
+                        android:text="From"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toTopOf="@+id/to"
+                        app:layout_constraintEnd_toStartOf="@+id/editt"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintStart_toEndOf="@+id/sw"
+                        app:layout_constraintTop_toBottomOf="@+id/paytm"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/to"
+                        android:layout_width="84dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/frto"
+                        android:gravity="center|center_horizontal"
+                        android:text="To"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toStartOf="@+id/ed"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/sw"
+                        app:layout_constraintTop_toBottomOf="@+id/from" />
+
+
+                    <EditText
+                        android:id="@+id/editt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:text="0"
+                        android:textColorHint="#000000"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toTopOf="@+id/ed"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/from"
+                        app:layout_constraintTop_toBottomOf="@+id/target"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <EditText
+                        android:id="@+id/ed"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="7dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:text="0"
+                        android:textColorHint="#000000"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/to"
+                        app:layout_constraintTop_toBottomOf="@+id/editt" />
+
+                    <TextView
+                        android:id="@+id/cat"
+                        android:layout_width="122dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/frto"
+                        android:gravity="center"
+                        android:text="Category"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="normal|bold|italic"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toStartOf="@+id/edi"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ed" />
+
+                    <EditText
+                        android:id="@+id/edi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="12dp"
+                        android:ems="10"
+                        android:hint="category"
+                        android:inputType="textAutoCorrect"
+                        android:textColor="#000000"
+                        android:textColorHint="#B5A7A7"
+                        android:textSize="20sp"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/cat"
+                        app:layout_constraintTop_toBottomOf="@+id/ed" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|left"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lots"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+
+                    app:lottie_rawRes="@raw/rem" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Add Or Remove Choices"
+                    android:textColor="#E91E63"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lott"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_rawRes="@raw/usurr" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#2B2626"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/dd"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/d"
+                android:navigationIcon="@drawable/ic_baseline_menu_24" />
+
+            <SearchView
+                android:id="@+id/ghu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/svie"
+                android:closeIcon="@drawable/ic_cl"
+                android:iconifiedByDefault="false"
+
+
+                android:queryHint="Search"
+                android:searchIcon="@drawable/ic_youtube_searched_for_24px"
+                android:theme="@style/et" />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

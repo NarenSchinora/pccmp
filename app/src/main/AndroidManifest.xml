@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myappf.pricecomparison">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+<supports-screens
+    android:largeScreens="true"
+    android:smallScreens="true"
+    android:normalScreens="true"
+    android:xlargeScreens="true"
+    android:anyDensity="true"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_com"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_com_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pricecomparison"
+
+        android:usesCleartextTraffic="true">
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1935301771153190~6138429522"/>
+
+        <activity android:name=".helpme"
+            android:screenOrientation="portrait"
+            android:theme="@style/spscr"
+
+            >
+
+        </activity>
+        <activity
+            android:name=".favorite"
+            android:screenOrientation="portrait"
+            android:theme="@style/spscr"></activity>
+        <activity
+            android:name=".intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/spscr" />
+        <activity
+            android:name=".subresults"
+            android:screenOrientation="portrait"
+            android:theme="@style/spscr" />
+        <activity
+            android:name=".listofshopie"
+            android:screenOrientation="portrait"
+            android:theme="@style/spscr" />
+        <activity
+            android:name=".results"
+            android:screenOrientation="portrait"
+            android:theme="@style/spscr" />
+        <activity
+            android:name=".easter"
+            android:screenOrientation="portrait"
+            android:theme="@style/spscr" />
+        <activity
+            android:name=".firstscreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/spsc" />
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/spscr">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/sc" />
+    </application>
+
+</manifest>
